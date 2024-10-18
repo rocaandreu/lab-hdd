@@ -1,0 +1,71 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.3_2 2021.09, Sep 10 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/simulation/modelsim
+T_opt
+!s110 1729169662
+VKlXK4m^H;nW_DJBa67Yi[2
+04 10 4 work tb_count28 fast 0
+=1-000ae431a4f1-671108fe-7166d-127f
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OE;O;2021.3_2;73
+vcount28
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1729169530
+!i10b 1
+!s100 >EMCacQRITSJ?Ok0`aWC:0
+IIIb@<GCTQCb4VUWL1kG9e1
+S1
+R0
+w1663080756
+8/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/count28.sv
+F/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/count28.sv
+!i122 0
+L0 3 50
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OE;L;2021.3_2;73
+r1
+!s85 0
+31
+!s108 1729169530.000000
+!s107 /home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/count28.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3|/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/count28.sv|
+!i113 0
+o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -sv -work work +incdir+/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb_count28
+R2
+!s110 1729169551
+!i10b 1
+!s100 [9jozjkHaoBIDjSgNl]f51
+IY=T7H415kFBNF[XAAFX4]1
+S1
+R0
+w1658820874
+8/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/tb_count28.sv
+F/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/tb_count28.sv
+!i122 2
+L0 3 38
+R3
+R4
+r1
+!s85 0
+31
+!s108 1729169551.000000
+!s107 /home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/tb_count28.sv|
+!s90 -reportprogress|300|-work|work|/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab3/tb_count28.sv|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

@@ -1,0 +1,17 @@
+module(
+    // Add parameters here
+);
+booth (
+    input  logic        clk;    // global clock signal, 100 MHz frequency
+    input  logic        resetn; // global reset signal, active low
+    input  logic        start;  // signal that activates the multiplication process by a rising edge
+    input  logic        ack;    // Input used to deassert the IRQ and busy outputs
+    input  logic [15:0] data_a; // First 16-bit operand
+    input  logic [15:0] data_b; // Second 16-bit operand
+
+    output logic [31:0] result; // result of the multiplication
+    output logic        busy;   // output that indicates that a multiplication process is in progress
+    output logic        irq;    // IRQ signal activated when the multiplication has completed
+);
+
+endmodule booth;
