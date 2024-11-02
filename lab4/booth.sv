@@ -44,7 +44,7 @@ module booth (
 
         // Compute data_a's compliment
         data_a_ext = data_a[15] ? {16'hFFFF, data_a[15:0]} : {16'b0, data_a[15:0]};
-	    data_a_comp = (~data_a_ext) + 1'b1;
+        data_a_comp = (~data_a_ext) + 1'b1;
 
         // Set action depending on the 3 bit window we are seeing
         action = data_b_pad[(16 - (2*win_cnt_r))-:3];
