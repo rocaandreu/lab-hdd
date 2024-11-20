@@ -75,7 +75,7 @@ module tb_mult_16b;  // Testbench module
 
             // Send ack to set 
             ack = 1'b1;
-            #(CLK_PERIOD);
+            #(3*CLK_PERIOD);
             ack = 1'b0;
 
             // Wait 10 clks to have a clearer waveform
@@ -100,12 +100,62 @@ module tb_mult_16b;  // Testbench module
 
             // Send ack to set 
             ack = 1'b1;
-            #(CLK_PERIOD);
+            #(3*CLK_PERIOD);
             ack = 1'b0;
 
             // Wait 10 clks to have a clearer waveform
             #(10*CLK_PERIOD);
             data_b = data_b << 1 | 3'b100;
+        end
+
+	// Test with negative number
+        #(CLK_PERIOD);
+        data_a  = 16'h0004;
+        data_b  = 16'hFFFE; // -2
+
+        for (int i = 0; i < 4; i++) begin
+            // Perform multiplication and add 1 to the left of data_b
+
+            #(CLK_PERIOD);
+            start = 1'b1;
+
+            // Wait for multiplication to end
+            #(10*CLK_PERIOD); 
+            start = 1'b0;
+
+            // Send ack to set 
+            ack = 1'b1;
+            #(3*CLK_PERIOD);
+            ack = 1'b0;
+
+            // Wait 10 clks to have a clearer waveform
+            #(10*CLK_PERIOD);
+            data_b = data_b*3;
+        end
+
+	// Test with negative number
+        #(CLK_PERIOD);
+        data_a  = 16'hFFFE;
+        data_b  = 16'hFFFE; // -2
+
+        for (int i = 0; i < 4; i++) begin
+            // Perform multiplication and add 1 to the left of data_b
+
+            #(CLK_PERIOD);
+            start = 1'b1;
+
+            // Wait for multiplication to end
+            #(10*CLK_PERIOD); 
+            start = 1'b0;
+
+            // Send ack to set 
+            ack = 1'b1;
+            #(3*CLK_PERIOD);
+            ack = 1'b0;
+
+            // Wait 10 clks to have a clearer waveform
+            #(10*CLK_PERIOD);
+            data_b = data_b*3;
         end
     end
 endmodule

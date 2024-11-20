@@ -1,0 +1,9 @@
+#define SLV_REG_0_BOOTH 0xFF200000
+#define SLV_REG_1_BOOTH 0xFF200004
+#define SLV_REG_2_BOOTH 0xFF200008
+#define SLV_REG_3_BOOTH 0xFF20000C
+
+#define BOOTH_SR3_IRQ_EN_BIT (1 << 3)
+#define BOOTH_SR3_ACK_BIT    (1 << 2)
+#define BOOTH_SR3_BUSY_BIT   (1 << 1)
+#define BOOTH_SR3_START_BIT  (1 << 0)
