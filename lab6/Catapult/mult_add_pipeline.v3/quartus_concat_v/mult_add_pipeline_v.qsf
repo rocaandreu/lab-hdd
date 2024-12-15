@@ -1,0 +1,2 @@
+set_global_assignment -name SOURCE_TCL_SCRIPT_FILE /home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab6/Catapult/mult_add_pipeline.v3/quartus_concat_v/concat_rtl.v.aq.tcl
+

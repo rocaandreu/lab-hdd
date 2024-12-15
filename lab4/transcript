@@ -12,6 +12,18 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# OpenFile lab4.cr.mti
-cd /home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab4
 # Loading project lab4
+vsim work.tb_mult_16b -voptargs=+acc
+# vsim work.tb_mult_16b -voptargs="+acc" 
+# Start time: 18:52:08 on Dec 02,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_mult_16b(fast)
+# Loading work.booth(fast)
+add wave -position insertpoint sim:/tb_mult_16b/*
+run 1us
+run 1us
+run 2us
+# Causality operation skipped due to absence of debug database file
+# End time: 19:02:28 on Dec 02,2024, Elapsed time: 0:10:20
+# Errors: 0, Warnings: 1

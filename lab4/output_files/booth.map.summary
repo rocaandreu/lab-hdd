@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Dec  2 19:03:41 2024
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Standard Edition
+Revision Name : booth
+Top-level Entity Name : booth
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 38
+Total pins : 71
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

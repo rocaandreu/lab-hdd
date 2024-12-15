@@ -1,0 +1,26 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+solution file add ./src/mult_add_pipeline.cpp
+/INPUTFILES/1
+solution file add ./src/mult_add_pipeline.cpp
+/INPUTFILES/1
+solution file add ./src/mult_add_pipeline_ref.cpp
+/INPUTFILES/2
+solution file add ./src/tb.cpp
+/INPUTFILES/3
+solution file add ./src/mult_add_pipeline_ref.cpp -exclude true
+/INPUTFILES/2
+solution file add ./src/tb.cpp -exclude true
+/INPUTFILES/3
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Moving session transcript to file "/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab6/catapult.log"
+Front End called with arguments: -- /home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab6/src/mult_add_pipeline.cpp (CIN-69)
+Edison Design Group C++/C Front End - Version 6.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'mult_add_pipeline' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.76 seconds, memory usage 1297928kB, peak memory usage 1297928kB (SOL-9)

@@ -1,6 +1,14 @@
 m255
 K4
 z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.3_2 2021.09, Sep 10 2021
 13
 !s112 1.1
@@ -8,28 +16,73 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-d/home/andreu.roca.montserrat/alu/LAB_HDD/lab4
+Z1 d/home/andreu.roca.montserrat/alu/LAB_HDD/lab4
+T_opt
+!s110 1730999544
+VS7bB>dRhO96hQ4kc1:69n2
+Z2 04 11 4 work tb_mult_16b fast 0
+=5-000ae431a4f1-672cf4f8-a808e-255f
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OE;O;2021.3_2;73
+T_opt1
+!s110 1730999253
+VjHQ]goGkibHV>>Lze366g2
+R2
+=1-000ae431a4f1-672cf3d5-91d6a-2517
+R3
+o-quiet -auto_acc_if_foreign -work work
+R4
+n@_opt1
+R5
+R1
 vbooth
-DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1729273249
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 !s110 1730999542
 !i10b 1
-!s100 _XCITXH_LnfYSk]T0Q[bS1
-IEalW_664aiC31o@eUgz7_2
+!s100 dE6@B<ch^XI`nX;94;iok3
+IKQYXRG;VK^FEMPZ:H6al91
 S1
-d/home/alumnes/a/andreu.roca.montserrat/LAB_HDD/lab4
-w1729273295
-8booth.sv
-Fbooth.sv
-!i122 1
-L0 1 91
-VDg1SIo80bB@j0V0VzS_@n1
-OE;L;2021.3_2;73
+Z8 d/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4
+w1730998797
+8/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/booth.sv
+F/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/booth.sv
+!i122 13
+L0 1 121
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OE;L;2021.3_2;73
 r1
 !s85 0
 31
-!s108 1729273249.000000
-!s107 booth.sv|
-!s90 booth.sv|
+Z11 !s108 1730999542.000000
+!s107 /home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/booth.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/booth.sv|
 !i113 0
-o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-tCvgOpt 0
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vtb_mult_16b
+R6
+R7
+!i10b 1
+!s100 2^MS>7D:MS4H<GVzWMVnC0
+Io>4zbZ2M>AXG8nE2]WeO:1
+S1
+R8
+w1730999524
+8/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/tb_mult_16b.sv
+F/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/tb_mult_16b.sv
+!i122 14
+L0 5 157
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/tb_mult_16b.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/alumnes/a/andreu.roca.montserrat/lab-hdd/lab4/tb_mult_16b.sv|
+!i113 0
+R12
+R4
