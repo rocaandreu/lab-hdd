@@ -9,16 +9,17 @@
 #include <ac_fixed.h>
 #include <ac_int.h>
 
-const unsigned FILTER_ORDER = 157; //120;        // filter order
+#define AVERAGED_PEAKS 6
+
+const unsigned FILTER_ORDER = 158; //120;        // filter order
 const unsigned TAP_COUNT = FILTER_ORDER+1;  // there are N+1 coefficients for an N-order filter
 
 // Number of samples to detect one peak: Half period of the lower filter frequency
 // Tlow/(2Ts) = fs/(2flow) = 10 kHz/600 Hz = ~17. Take 32 for simpler division
 const unsigned SAMPLES_PEAK_DETECT = 20; // 32;
-const unsigned PK_AVG_CNT = 8;// 32; // Number of averaged peaks
+//const unsigned PK_AVG_CNT = 8;// 32; // Number of averaged peaks
 
-const unsigned averaged_peaks = 8;
-const unsigned peak_det_samples = 50;	//10000 samples 
+const unsigned peak_det_samples = 45;	//10000 samples
 
 typedef ac_fixed<10,2,true>   X_TYPE;
 typedef ac_fixed<12,2,true> COEFF_TYPE;
@@ -28,15 +29,14 @@ typedef ac_fixed<12,4,true,AC_RND,AC_SAT_SYM> Y_TYPE;
 typedef X_TYPE::rt_T<COEFF_TYPE>::mult           PROD_TYPE;
 typedef PROD_TYPE::rt_unary::set<TAP_COUNT>::sum SUM_TYPE;
 
-SUM_TYPE peak_max = 0;
-X_TYPE counter = 0;
+const COEFF_TYPE gain_delta = 0.03;
 
 // Comparison constants
 const Y_TYPE neg1 = -1;
 const Y_TYPE x_max = 2;
 const Y_TYPE x_ref = x_max/2;
-const Y_TYPE x_high = x_ref + x_ref/64;
-const Y_TYPE x_low = x_ref - x_ref/64; 
+const Y_TYPE x_high = x_ref + x_ref/16;
+const Y_TYPE x_low = x_ref - x_ref/16; 
 const Y_TYPE x_lock = x_ref/8;
 const Y_TYPE x_inc_dec = x_ref/16;
 
